@@ -1,0 +1,12 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    margin: 10px; /* Puedes ajustar el valor del margen según tus necesidades */
+    padding: 10px;
+    margin-right: 60px;
+    background-color: black;
+  }

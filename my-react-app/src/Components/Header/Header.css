@@ -1,0 +1,64 @@
+/* Añade un margen general a todo el cuerpo de la página */
+body {
+  margin: 20px; /* Ajusta el valor del margen según tus necesidades */
+}
+
+/* Estilo para el encabezado (header) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(227, 201, 231, 0.6) 0%, #050b24 45%, #0c1747 100%);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estilo para el logotipo */
+.logo {
+  padding: 25px;
+  height: 55px;
+  width: auto;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Estilo para la lista del menú */
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-item-center {
+  display: inline-block;
+  padding: 0 25px;
+  color: white;
+}
+
+/* Estilo para los elementos de contacto */
+.menu-items-contact {
+  display: flex;
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+/* ... Estilos restantes del archivo ... */
+

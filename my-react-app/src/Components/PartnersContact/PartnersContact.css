@@ -1,0 +1,129 @@
+/* PartnersContact.css */
+
+.partners-contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(227, 201, 231, 0.6) 0%, #050b24 45%, #0c1747 100%), url('./background.jpg');
+  background-size: cover;
+  position: relative;
+  transition: background 0.5s ease;
+}
+
+/* Ajusta el margen izquierdo del contenido */
+.content {
+  margin-left: 20px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+/* Agrega estilos para el efecto circular difuminado */
+.partners-contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 60px;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(12, 23, 71, 0.6) 10%, transparent 70%);
+}
+
+.left-content {
+  flex: 1;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.large-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.description {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.credit-card-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas de crédito horizontalmente */
+  align-items: center; /* Alinea las tarjetas de crédito verticalmente */
+  margin-top: 20px;
+}
+
+.credit-card-icons img {
+  width: 100px; /* Ajusta el ancho de las tarjetas de crédito según tus necesidades */
+  margin: 10px;
+}
+
+/* PartnersContact.css */
+
+/* ... (código previo) ... */
+
+.contact-form {
+  max-width: 400px; /* Establece el ancho máximo del formulario según tus preferencias */
+}
+
+/* Agrega estilos para el formulario */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 28px; /* Ajusta el tamaño del título según tus preferencias */
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  font-size: 16px; /* Ajusta el tamaño de las etiquetas según tus preferencias */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="submit"],
+.contact-form textarea {
+  width: 100%; /* Establece el ancho de los campos y el botón al 100% del contenedor */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Ajusta el tamaño de fuente de los campos según tus preferencias */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Permite que el área de texto sea redimensionable verticalmente */
+}
+
+.contact-form input[type="submit"] {
+  background-color: #007bff; /* Cambia el color del botón según tus preferencias */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #0056b3; /* Cambia el color del botón al pasar el cursor sobre él */
+}
+
+.form{
+  justify-content: center;
+}

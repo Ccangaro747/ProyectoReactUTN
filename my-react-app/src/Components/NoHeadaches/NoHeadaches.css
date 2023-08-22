@@ -1,0 +1,56 @@
+/* NoHeadaches.css */
+
+.comprehensive-security {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(227, 201, 231, 0.6) 0%, #050b24 45%, #0c1747 100%), url('/path/to/your/assets/background.jpg');
+  background-size: cover;
+  transition: background 0.5s ease;
+  color: white;
+}
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  background-color: #f2f2f2; /* Blanco oscuro o gris claro */
+  color: #333;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #001f3f; /* Azul marino claro */
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card.rectangle {
+  width: 600px;
+}
+
+.card.square {
+  width: 300px;
+}

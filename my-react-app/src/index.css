@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  margin: 0; /* Elimina el margen en el cuerpo de la página */
+  padding: 120; /* Elimina el relleno en el cuerpo de la página */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Cambia la fuente según tus preferencias */
+}
