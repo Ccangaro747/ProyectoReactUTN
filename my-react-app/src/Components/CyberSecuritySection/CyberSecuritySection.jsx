@@ -1,11 +1,11 @@
 import React from 'react';
 import './CyberSecuritySection.css';
-import "../global.css"; // Importa el archivo global.css si lo necesitas
-import '../../../src/index.css'; // Importa otros archivos CSS si son necesarios
+import "../global.css"; 
+import '../../../src/index.css';
 
 const CyberSecuritySection = () => {
   return (
-    <section className="partners-contact-section">
+    <section className="security-threats">
       <div className="left-content">
         <h1 className="title">Protect Your</h1>
         <h2 className='titletwo'>Cyber Security</h2>

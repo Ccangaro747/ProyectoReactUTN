@@ -1,6 +1,5 @@
-/* PartnersContact.css */
 
-.partners-contact-section {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -9,14 +8,14 @@
   background-size: cover;
   position: relative;
   transition: background 0.5s ease;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Ajusta el margen izquierdo del contenido */
 .content {
-  margin-left: 20px; /* Puedes ajustar este valor según tus necesidades */
+  margin-left: 20px; 
 }
 
-/* Agrega estilos para el efecto circular difuminado */
+/* Estilos para el efecto circular difuminado */
 .partners-contact-section::before {
   content: "";
   position: absolute;
@@ -29,6 +28,7 @@
 
 .left-content {
   flex: 1;
+  margin-left: 15px;
 }
 
 .right-content {
@@ -38,21 +38,15 @@
 }
 
 .small-title {
-  font-size: 24px;
+  font-size: 15px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  color: #0056b3;
+  margin-right: 23px;
 }
 
 .large-title {
   font-size: 48px;
   margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-.description {
-  font-size: 18px;
-  text-align: left;
-  margin-left: 20px;
 }
 
 .credit-card-icons {
@@ -61,6 +55,7 @@
   justify-content: center; /* Centra las tarjetas de crédito horizontalmente */
   align-items: center; /* Alinea las tarjetas de crédito verticalmente */
   margin-top: 20px;
+  margin-right: 40px;
 }
 
 .credit-card-icons img {
@@ -68,15 +63,11 @@
   margin: 10px;
 }
 
-/* PartnersContact.css */
-
-/* ... (código previo) ... */
-
 .contact-form {
-  max-width: 400px; /* Establece el ancho máximo del formulario según tus preferencias */
+  max-width: 400px; /* Ancho máximo del formulario */
 }
 
-/* Agrega estilos para el formulario */
+/* Estilos para el formulario */
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -85,7 +76,7 @@
 }
 
 .contact-form h2 {
-  font-size: 28px; /* Ajusta el tamaño del título según tus preferencias */
+  font-size: 28px; /* Tamaño del título */
   margin-bottom: 20px;
 }
 
@@ -94,7 +85,7 @@
 }
 
 .contact-form label {
-  font-size: 16px; /* Ajusta el tamaño de las etiquetas según tus preferencias */
+  font-size: 16px; /* Ajusta el tamaño de las etiquetas */
 }
 
 .contact-form input[type="text"],
@@ -106,7 +97,7 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px; /* Ajusta el tamaño de fuente de los campos según tus preferencias */
+  font-size: 16px; 
 }
 
 .contact-form textarea {
@@ -114,16 +105,58 @@
 }
 
 .contact-form input[type="submit"] {
-  background-color: #007bff; /* Cambia el color del botón según tus preferencias */
+  background-color: #007bff; 
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .contact-form input[type="submit"]:hover {
-  background-color: #0056b3; /* Cambia el color del botón al pasar el cursor sobre él */
+  background-color: #0056b3; /* Cambia el color del botón al pasar el cursor por encima */
 }
 
 .form{
   justify-content: center;
+}
+
+.partners-contact-section .left-content .description-partners{
+  margin-left: 20px;
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Cambia la dirección de la columna en dispositivos móviles */
+    align-items: center; /* Centra el contenido verticalmente en dispositivos móviles */
+  }
+
+  .content {
+    text-align: center; /* Centra el contenido horizontalmente en dispositivos móviles */
+  }
+
+  .small-title {
+    font-size: 1rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    margin-bottom: 10px; /* Reduce el margen inferior en dispositivos móviles */
+  }
+
+  .large-title {
+    font-size: 2rem; /* Tamaño de fuente más grande en dispositivos móviles */
+    margin-bottom: 10px; /* Reduce el margen inferior en dispositivos móviles */
+  }
+
+  .description-partners {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+    text-align: center; /* Centra el texto horizontalmente en dispositivos móviles */
+  }
+
+  .credit-card-icons {
+    margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+  }
+
+  .credit-card-icons img {
+    width: 80px; /* Ajusta el ancho de las tarjetas de crédito según tus necesidades */
+    margin: 10px;
+  }
 }

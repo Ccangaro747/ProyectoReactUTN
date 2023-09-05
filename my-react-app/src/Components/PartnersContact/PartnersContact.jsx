@@ -14,11 +14,11 @@ const PartnersContact = () => {
   const creditCardImages = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9];
 
   return (
-    <section className="partners-contact-section">
+    <section className="footer">
       <div className="left-content">
         <h2 className="small-title">Join Us And Enjoy Solutions From The Industry's Leading Vendors</h2>
         <h2 className="large-title">Our Solutions Partners</h2>
-        <p className="description">
+        <p className="description-partners">
           We've Partnered With The Best Vendors In The Industry
           To Provide Our Clients With A Business Platform That
           Accelerates Growth, Protects Critical Data, And Enables

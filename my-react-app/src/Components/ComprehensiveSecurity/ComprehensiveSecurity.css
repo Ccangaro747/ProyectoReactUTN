@@ -1,5 +1,3 @@
-/* ComprehensiveSecurity.css */
-
 .comprehensive-security {
   display: flex;
   justify-content: space-between;
@@ -10,6 +8,7 @@
   position: relative;
   margin: 0;
   width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .comprehensive-content {
@@ -20,7 +19,9 @@
   align-items: left;
   color: white;
   max-width: 50%;
+  margin-left: 20px;
 }
+
 
 .title {
   font-size: 36px;
@@ -41,6 +42,46 @@ p {
 }
 
 .comprehensive-image img {
-  max-width: 100%;
+  max-width: 125%;
   height: auto;
+  margin-left: -260px;
+  margin-bottom: 100px;
 }
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .comprehensive-security {
+    flex-direction: column; /* Cambia la dirección de flex a columna en dispositivos móviles */
+    align-items: center; /* Centra los elementos en dispositivos móviles */
+    text-align: center; /* Alinea el contenido al centro en dispositivos móviles */
+  }
+
+  .comprehensive-content {
+    max-width: 80%; /* Ajusta el ancho máximo del contenido en dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+  }
+
+  .comprehensive-image {
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+    margin-bottom: 20px; /* Ajusta el margen inferior de la imagen en dispositivos móviles */
+  }
+
+  .comprehensive-image img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-left: 0; /* Elimina el margen izquierdo de la imagen en dispositivos móviles */
+  }
+
+  .title {
+    font-size: 24px; /* Ajusta el tamaño del título en dispositivos móviles */
+    margin-bottom: 10px; /* Ajusta el margen inferior del título en dispositivos móviles */
+  }
+
+  p {
+    font-size: 16px; /* Ajusta el tamaño del texto en dispositivos móviles */
+    margin-bottom: 10px; /* Ajusta el margen inferior del párrafo en dispositivos móviles */
+  }
+}
+

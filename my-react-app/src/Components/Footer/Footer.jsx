@@ -6,13 +6,15 @@ import '../../../src/index.css';
 const Footer = () => {
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
+  const [asunto, setAsunto] = useState(''); // Nuevo estado para el campo "Asunto"
   const [mensaje, setMensaje] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para manejar los datos del formulario, por ejemplo, enviarlos a un servidor o realizar otras acciones.
+    // Aca puedo agregar la lógica para manejar los datos del formulario, enviarlos a un servidor o realizar acciones.
     console.log('Nombre:', nombre);
     console.log('Correo:', correo);
+    console.log('Asunto:', asunto); // Nuevo campo "Asunto"
     console.log('Mensaje:', mensaje);
   };
 
@@ -44,6 +46,17 @@ const Footer = () => {
             />
           </div>
           <div className="form-group">
+            <label htmlFor="asunto">Asunto:</label> {/* Nuevo campo "Asunto" */}
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              value={asunto}
+              onChange={(e) => setAsunto(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
             <label htmlFor="mensaje">Mensaje:</label>
             <textarea
               id="mensaje"
@@ -62,3 +75,4 @@ const Footer = () => {
 }
 
 export default Footer;
+

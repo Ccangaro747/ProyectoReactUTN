@@ -1,5 +1,3 @@
-/* Components/SecurityThreats.css */
-
 .security-threats {
   display: flex;
   align-items: center;
@@ -12,7 +10,8 @@
   overflow: hidden;
   margin: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .security-threats::before {
@@ -35,21 +34,22 @@
 .security-image .imagendos {
   max-width: 100%;
   height: auto;
-  transition: opacity 0.3s; /* Agrega una transición para suavizar el efecto hover */
+  transition: opacity 0.3s; /* Transición para suavizar el efecto hover */
 }
 .security-image:hover .imagendos {
-  opacity: 0.8; /* Reduce la opacidad al 80% en el hover (ajusta según tus preferencias) */
+  opacity: 0.8; /* Reduce la opacidad al 80% en el hover */
 }
 .security-content {
-  flex: 1; /* Cambia flex a 1 para que el contenido ocupe el mismo espacio que la imagen */
+  flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 50%; /* Ajusta el ancho máximo del contenido */
-  margin: 0;
+  max-width: 44%; 
+  margin-left: 0; 
   text-align: left;
 }
+
 
 .parrafo {
   font-size: 20px;
@@ -57,9 +57,10 @@
   margin-bottom: 10px;
 }
 
-.title {
-  font-size: 36px;
+.security-content .title {
+  font-size: 40px;
   margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .titleimpact{
@@ -105,6 +106,43 @@
   font-size: 18px;
   margin-bottom: 0;
 }
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .security-threats {
+    padding: 10px; /* Espaciado en dispositivos móviles */
+    flex-direction: column; /* Cambia la dirección de flex a columna en dispositivos móviles */
+    text-align: center; /* Centra el texto en dispositivos móviles */
+  }
+
+  .security-image {
+    max-width: 70%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
+    margin: 10px auto; /* Centra la imagen horizontalmente y ajusta el margen superior en dispositivos móviles */
+    order: 2; /* Cambia el orden para que la imagen esté debajo en dispositivos móviles */
+  }
+
+  .security-image .imagendos {
+    opacity: 1; /* Restablece la opacidad en dispositivos móviles */
+  }
+
+  .security-content {
+    max-width: 100%; /* Ajusta el ancho máximo del contenido en dispositivos móviles */
+    margin: 20px 0; /* Ajusta el margen del contenido en dispositivos móviles */
+    text-align: center; /* Centra el texto en dispositivos móviles */
+    align-items: center; /* Centra los elementos secundarios verticalmente en dispositivos móviles */
+  }
+
+  .statistics {
+    flex-direction: column; /* Cambia la dirección de flex a columna en dispositivos móviles */
+    gap: 10px; /* Ajusta el espacio entre estadísticas en dispositivos móviles */
+  }
+
+  .statistic {
+    max-width: 100%; /* Ajusta el ancho máximo de las estadísticas en dispositivos móviles */
+  }
+}
+
 
 
 

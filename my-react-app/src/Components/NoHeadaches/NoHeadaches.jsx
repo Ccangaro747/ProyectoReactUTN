@@ -7,8 +7,9 @@ const NoHeadaches = () => {
     <div className="cards-container">
       <div className="title-container">
         <h1>Tons Of Features, No Headaches</h1>
-        <p>
-          The mPower CloudSecure Suite combines the robust security features of Microsoft 365 complimented by key solutions from industry-leading vendors to protect your employees, their devices, and your company's data.
+        <br />
+        <p className="parrafo-nh">
+          The mPower CloudSecure Suite combines the robust security features of Microsoft 365 complimented by key solutions from <br />industry-leading vendors to protect your employees, their devices, and your company's data.
         </p>
       </div>
       <div className="cards">

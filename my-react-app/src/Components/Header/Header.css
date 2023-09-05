@@ -1,8 +1,3 @@
-/* Añade un margen general a todo el cuerpo de la página */
-body {
-  margin: 20px; /* Ajusta el valor del margen según tus necesidades */
-}
-
 /* Estilo para el encabezado (header) */
 .header {
   display: flex;
@@ -26,6 +21,10 @@ body {
   font-size: 25px;
   cursor: pointer;
   color: white;
+  margin-top: 15px;
+  background: linear-gradient(to right, #007bff, #b645c7);
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para la lista del menú */
@@ -53,12 +52,20 @@ body {
   padding: 0;
 }
 
-.menu-item {
+.menu-items .menu-item1 {
   display: inline-block;
   padding: 25px;
   text-align: center;
   color: white;
+  margin-right: 20px;
 }
 
-/* ... Estilos restantes del archivo ... */
+.menu-items .menu-item2 {
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  margin-right: 22px;
+}
 
+/*La media query la agregué en el archivo global.css*/

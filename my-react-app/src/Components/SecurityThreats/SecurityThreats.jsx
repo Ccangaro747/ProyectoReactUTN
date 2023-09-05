@@ -8,7 +8,7 @@ const SecurityThreats = () => {
   return (
     <div className="security-threats">
       <div className="security-image">
-        <img className='imagendos' src={imagen} alt=""/>
+        <img className='imagendos' src={imagen} alt="" />
       </div>
       <div className="security-content">
         <h1 className='title'>Tackling Modern<br />Security Threats</h1>

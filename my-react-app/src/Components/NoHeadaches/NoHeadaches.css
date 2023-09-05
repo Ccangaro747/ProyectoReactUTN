@@ -1,5 +1,3 @@
-/* NoHeadaches.css */
-
 .comprehensive-security {
   display: flex;
   align-items: center;
@@ -8,6 +6,7 @@
   background-size: cover;
   transition: background 0.5s ease;
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .cards-container {
   display: flex;
@@ -28,19 +27,21 @@
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(24, 23, 23, 0.5);
   padding: 20px;
   margin: 10px;
   text-align: center;
   width: 300px;
-  background-color: #f2f2f2; /* Blanco oscuro o gris claro */
   color: #333;
+  background: rgba(0, 0, 128, 0.1); /* Fondo azul marino con 10% de transparencia */
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
 }
+
 
 .card h2 {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  color: #001f3f; /* Azul marino claro */
+  color: white;
 }
 
 .card p {
@@ -54,3 +55,30 @@
 .card.square {
   width: 300px;
 }
+
+.parrafo-nh{
+  text-align: center;
+  justify-content: center;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .comprehensive-security .cards-container .title-container h1 {
+    font-size: 1.2rem; /* Ajusta el tamaño de fuente del título en dispositivos móviles */
+    text-align: center; /* Centra el texto del título en dispositivos móviles */
+  }
+  
+  .cards-container .card{
+    width: 300px;
+  }
+  /* Añade el siguiente estilo para ajustar el tamaño de fuente del párrafo en dispositivos móviles */
+  .card p {
+    font-size: 0.8rem; /* Ajusta el tamaño de fuente del párrafo en dispositivos móviles */
+  }
+}
+
+
+
+
+
+

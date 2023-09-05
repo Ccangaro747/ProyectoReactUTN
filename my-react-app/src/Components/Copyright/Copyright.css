@@ -1,0 +1,18 @@
+.partners-contact-section {
+    text-align: center;
+    justify-content: center;
+}
+
+.partners-contact-section .title-copyright{
+    font-size: 5px;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .title-copyright {
+      font-size: 12px; /* Ajusta el tamaño de fuente en dispositivos móviles */
+      text-align: center; /* Centra el texto horizontalmente en dispositivos móviles */
+      margin: 5px 0; /* Ajusta los márgenes superior e inferior en dispositivos móviles */
+      justify-content: center;
+    }
+  }

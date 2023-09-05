@@ -5,8 +5,69 @@
   }
   
 body {
-    margin: 10px; /* Puedes ajustar el valor del margen según tus necesidades */
-    padding: 10px;
-    margin-right: 60px;
+    margin: auto; /* Puedes ajustar el valor del margen según tus necesidades */
+    margin-right: auto;
     background-color: black;
   }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .logo {
+      padding: 10px;
+      font-size: 20px;
+    }
+  
+    .menu-list {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu-item-center {
+      padding: 10px 0;
+    }
+  
+    .menu-items-contact {
+      margin-top: 20px;
+    }
+  
+    .menu-items .menu-item1,
+    .menu-items .menu-item2 {
+      padding: 10px 0;
+      margin-right: 0;
+    }
+
+    .cybersecurity-section {
+      flex-direction: column; /* Cambia la dirección de los elementos a columna */
+      text-align: center; /* Centra todo el contenido en dispositivos móviles */
+      padding: 50px; /* Ajusta el espaciado en dispositivos móviles */
+    }
+  
+    .image-container {
+      max-width: 100%;
+      height: auto;
+      width: 100%; /* Haz que la imagen ocupe el ancho completo del contenedor en dispositivos móviles */
+      margin: 0; /* Elimina el margen en dispositivos móviles */
+      border-radius: 0; /* Elimina el borde redondeado en dispositivos móviles si es necesario */
+    }
+  
+    .titletwo {
+      font-size: 60px; /* Ajusta el tamaño del título en dispositivos móviles */
+    }
+  
+    .title-paragraph {
+      margin-left: 0; /* Ajusta el margen izquierdo del párrafo en dispositivos móviles */
+      margin-top: 20px; /* Ajusta el margen superior del párrafo en dispositivos móviles */
+    }
+  
+    .titlethree {
+      margin-left: 0; /* Ajusta el margen izquierdo del título en dispositivos móviles */
+    }
+  }
+
+
+

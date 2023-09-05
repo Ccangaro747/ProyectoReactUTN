@@ -1,11 +1,13 @@
 import React from 'react';
-import './ComprehensiveSecurity.css'; // Asegúrate de tener un archivo CSS para dar estilo a esta sección si es necesario
+import './ComprehensiveSecurity.css';
+import imagen from '../../Imágenes/imagentres.png';
 
 const ComprehensiveSecurity = () => {
   return (
     <div className="comprehensive-security">
       <div className="comprehensive-content">
         <h1 className='title'>Comprehensive Security To Protect Your Business</h1>
+        <br />
         <p>
           The mPOWER CloudSecure Suite is a comprehensive solution that provides a secure, modern ecosystem for your business managed by our certified professionals.
         </p>
@@ -17,7 +19,7 @@ const ComprehensiveSecurity = () => {
         </p>
       </div>
       <div className="comprehensive-image">
-        <img src="/path/to/your/assets/comprehensive_image.jpg" alt="Comprehensive Security" />
+      <img className='imagentres' src={imagen} alt=""/>
       </div>
     </div>
   );

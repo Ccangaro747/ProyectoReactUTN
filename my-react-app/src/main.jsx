@@ -11,6 +11,7 @@ import PartnersContact from './Components/PartnersContact/PartnersContact.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import '../src/Components/global.css'
 import End from './Components/End/End.jsx'
+import Copyright from './Components/Copyright/Copyright.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,5 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <PartnersContact />
     <Footer />
     <End />
+    <Copyright />
   </React.StrictMode>,
 )

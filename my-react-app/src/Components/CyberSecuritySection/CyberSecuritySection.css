@@ -1,12 +1,10 @@
-/* CSS completo para CyberSecuritySection.css */
 
-.partners-contact-section {
+.cybersecurity-section{
   background: linear-gradient(to right, rgba(227, 201, 231, 0.6) 0%, #050b24 45%, #0c1747 100%);
   background-size: cover;
-  transition: background 0.5s ease;
   color: white;
   overflow: hidden;
-  padding: 150px; /* Agrega la unidad de medida (px) */
+  padding: 150px; 
   margin: 0;
   width: 100%;
   display: flex;
@@ -16,7 +14,7 @@
 }
 
 /* Estilos para el título "Protect Your" y otros elementos */
-.partners-contact-section .left-content .title {
+.security-threats .left-content .title {
   font-size: 70px;
   margin-left: 16%;
   text-align: left;
@@ -31,7 +29,6 @@
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  opacity: 1;
   margin: 0; /* Elimina el margen superior e inferior del título */
   text-align: center;
 }
@@ -59,7 +56,67 @@
   background-position: center;
   width: 450px;
   height: 450px;
-  border-radius: 2000px; /* Ajusta el valor para difuminar los bordes */
-  margin-left: 200px; /* Ajusta el valor para mover la imagen más a la derecha */
+  border-radius: 2000px; /* Difuminar los bordes */
+  margin-left: 200px;
   margin-top: -4%;
 }
+
+.titlethree {
+  position: relative;
+  margin-left: 20px;
+}
+
+.titlethree::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to right, #007bff, #b645c7);
+  border-radius: 50%; /* Esto hace que la bolita sea redonda */
+  margin-right: 10px; /* Espacio entre la bolita y el texto */
+  position: absolute;
+  left: -20px; /* Ajusta la posición de la bolita */
+  top: 50%; /* Centra verticalmente la bolita */
+  transform: translateY(-50%); /* Centra verticalmente la bolita */
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .cybersecurity-section {
+    padding: 20px; /* Ajusta el padding para dispositivos móviles */
+  }
+
+  .left-content {
+    text-align: left; /* Alinea el contenido a la izquierda en dispositivos móviles */
+  }
+
+  .right-content {
+    text-align: left; /* Alinea el contenido a la izquierda en dispositivos móviles */
+  }
+
+  .title {
+    margin-left: 10px; /* Ajusta el margen izquierdo del título en dispositivos móviles */
+    text-align: center; /* Centra el título en dispositivos móviles */
+  }
+
+  .titletwo {
+    margin-left: 10px; /* Ajusta el margen izquierdo del título en dispositivos móviles */
+    text-align: center; /* Centra el título en dispositivos móviles */
+  }
+
+  .title-paragraph {
+    margin-left: 10px; /* Ajusta el margen izquierdo del párrafo en dispositivos móviles */
+    text-align: center; /* Centra el párrafo en dispositivos móviles */
+  }
+
+  .right-content .image-container {
+    margin-left: 0; /* Elimina el margen izquierdo de la imagen en dispositivos móviles */
+  }
+}
+
+
+
+
+
+
