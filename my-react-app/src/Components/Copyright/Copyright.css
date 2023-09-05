@@ -8,6 +8,8 @@
     text-align: center;
     justify-content: center;
 }
+
+/* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .title-copyright {
       font-size: 12px; /* Ajusta el tamaño de fuente en dispositivos móviles */
